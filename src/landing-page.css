@@ -1,9 +1,19 @@
+
+html {
+    font-family: "Ibarra Real Nova", serif;
+
+}
+
+body {
+    color: #192221;
+    background-color: #d6d8d9;
+}
 #title {
+    
 }
 
-#navbar {
-    display: grid;
-    grid-template-columns: repeat(1fr, 4);
+#title:hover {
+    font-size: 38px;
+    transition: ease-in-out;
+    transition-duration: 150ms;
 }
-
-#item1{}
