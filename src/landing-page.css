@@ -1,19 +1,58 @@
 
+
+:root {
+    --accent: white;
+    --bg: black;
+} 
+
 html {
     font-family: "Ibarra Real Nova", serif;
-
 }
 
 body {
+    display: grid;
+    grid-template-rows: 10% 20% auto;
+    grid-template-areas: 
+    "null"
+    "nav"
+    "cont";
+
     color: #192221;
-    background-color: #d6d8d9;
+    background-color: var(--bg);
+    color: var(--accent);
 }
-#title {
+
+a {
+    text-decoration: none;
+    color: var(--accent);
+    background: linear-gradient(to right, white, black);
+}
+
+.navbar {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    list-style: none; 
+    font-size: 20px;
+    text-transform: uppercase;
+    
+}
+ 
+
+
+.title-block {
+    grid-area: cont;
+    margin: auto;
+    color: white;
+    width: 500px;
     
 }
 
-#title:hover {
-    font-size: 38px;
-    transition: ease-in-out;
-    transition-duration: 150ms;
+#logo {
+    max-width: 75%;
+    max-height: auto;
+}
+
+#title-text {
 }
